@@ -9,17 +9,4 @@ export const apiClient = axios.create({
   },
 });
 
-// Add handle to all requests if available
-apiClient.interceptors.request.use((config) => {
-  const handle = localStorage.getItem('cf_handle');
-  if (handle && !config.params) {
-    config.params = {};
-  }
-  if (handle) {
-    config.params = config.params || {};
-    config.params.handle = handle;
-  }
-  return config;
-});
-
 export default apiClient;
