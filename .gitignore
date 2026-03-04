@@ -1,0 +1,19 @@
+# Vite
+node_modules
+dist
+.vite
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
