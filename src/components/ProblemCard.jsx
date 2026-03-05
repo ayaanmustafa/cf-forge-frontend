@@ -35,7 +35,9 @@ const ProblemCard = ({ problem, onAddTag, onAddBucket, onAddNote, onRemoveTag, o
           className="w-full mb-3 p-2 bg-amber-900 bg-opacity-20 rounded text-amber-200 text-xs border border-amber-700 border-opacity-30 hover:border-amber-700 transition text-left"
         >
           <p className="font-semibold mb-1">Note:</p>
-          <p className="line-clamp-3">{problem.user_note}</p>
+          <p className="line-clamp-3 whitespace-pre-wrap font-mono text-xs">
+  {problem.user_note}
+</p>
           <p className="text-amber-300 text-xs mt-1 italic">Click to expand</p>
         </button>
       )}
